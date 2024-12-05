@@ -1,0 +1,31 @@
+@startuml Ses Kontrol Etme
+title Ses Düzeyi Kontrol Etme Modülü
+
+class SesDuzeyiKontrol{
+    #Wcam:int
+    #Hcam:int
+    #input:int
+    #sesKontrolEt(Wcam,Hcam,input)
+}
+
+package imports {
+    class cv2
+    class time
+    class numpy
+    class el_izleme
+    class math
+    class comtypes
+    class pycaw
+}
+
+SesDuzeyiKontrol ..> cv2 : Kullanılıyor
+SesDuzeyiKontrol ..> time : Kullanılıyor
+SesDuzeyiKontrol ..> numpy : Kullanılıyor
+SesDuzeyiKontrol ..> el_izleme : Kullanılıyor
+SesDuzeyiKontrol ..> math : Kullanılıyor
+SesDuzeyiKontrol ..> comtypes : Kullanılıyor
+SesDuzeyiKontrol ..> pycaw : Kullanılıyor
+
+hide empty members
+
+@enduml

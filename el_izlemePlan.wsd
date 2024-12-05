@@ -1,0 +1,29 @@
+@startuml El İzleme Planı
+title El İzleme Modülü
+
+class handDedector{
+    #___init___()
+    #findHands()
+    #findPosition()
+    #fingersUp()
+    #findDistance()
+    #main()
+}
+
+package imports {
+    class cv2
+    class mediapipe
+    class time
+    class math
+    class numpy
+}
+
+handDedector ..> cv2 : Kullanılıyor
+handDedector ..> mediapipe : Kullanılıyor
+handDedector ..> time : Kullanılıyor
+handDedector ..> math : Kullanılıyor
+handDedector ..> numpy : Kullanılıyor
+
+hide empty members
+
+@enduml
